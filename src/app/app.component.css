@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: auto
+  }
+
+
+.card {
+    max-width: 400px
+}
+  
+.example-icon {
+  justify-content: left;
+}
+.toolbar {
+  justify-content: left;
+}

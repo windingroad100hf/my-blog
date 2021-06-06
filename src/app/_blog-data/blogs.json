@@ -1,0 +1,14 @@
+{
+    "blogs": [
+        {
+        "title":"Blog 1",
+        "description": "This is blog1",
+        "content": "Oh what a great day it is today!"
+        },
+        {
+        "title":"Blog 2",
+        "description": "This is blog2",
+        "content": "shnoodie doodle doodle doo"
+        }
+    ]
+}

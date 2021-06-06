@@ -1,0 +1,9 @@
+.blog-index {
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    overflow-wrap: normal;
+    word-break: break-all;
+}
