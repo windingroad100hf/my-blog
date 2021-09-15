@@ -4,7 +4,7 @@ export interface blog {
     content: string;
   }
   
-  export const blogs = [
+  export let blogs = [
     {
       id:1,
       substance:

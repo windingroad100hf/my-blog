@@ -8,6 +8,9 @@ import { PaperComponent } from './paper/paper.component';
 import { BlogIndexComponent } from './blog-index/blog-index.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http'
+import { MatToolbar } from '@angular/material/toolbar';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

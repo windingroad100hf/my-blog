@@ -10,13 +10,12 @@ export class BlogCardComponent implements OnInit {
   @Input() title!: string;
   @Input() description!: string;
   @Input() blogLink!: string;
+  linktitle: string = "shnoodle"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-  }
-  
-  
-  goTo(str: string) {
-    this.router.navigate(['/'+str])
+
+  this.linktitle = this.title.replace(/\s+/g, '-').toLowerCase();
+
   }
 }
