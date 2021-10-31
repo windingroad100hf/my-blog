@@ -10,7 +10,7 @@ export class BlogCardComponent implements OnInit {
   @Input() title!: string;
   @Input() description!: string;
   @Input() blogLink!: string;
-  linktitle: string = "shnoodle"
+  linktitle: string = "hello"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
