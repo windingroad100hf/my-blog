@@ -16,6 +16,7 @@ export class PaperComponent implements OnInit {
 
   blogdata: any
   title = "test";
+  author = "test"
   publication_date = "test"
   body = "test";
 
@@ -45,6 +46,7 @@ export class PaperComponent implements OnInit {
     this.title = this.blogdata.Title
     this.publication_date = this.blogdata.Publication_date
     this.body = this.blogdata.Content
+    this.author = this.blogdata.Author
   }
 
   findBlogByTitle(titlestring: string) {

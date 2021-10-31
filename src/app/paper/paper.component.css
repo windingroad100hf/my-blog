@@ -1,6 +1,17 @@
 
 .title {
     text-align: center;
+    font-size: 40px;
+    font-family: "Georgia", Times, serif;
+}
+.date {
+    text-align: center;
+    vertical-align: center;
+    font-family: "Georgia", Times, serif;
+}
+.author {
+    text-align: center;
+    vertical-align: center;
     font-family: "Georgia", Times, serif;
 }
 .doc {
@@ -8,5 +19,6 @@
     margin-left: 200px;
     margin-right: 200px;
     font-family: "Georgia", Times, serif;
+    font-size: 20px; height: 27px;
 }
 
