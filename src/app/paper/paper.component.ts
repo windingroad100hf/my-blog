@@ -22,7 +22,7 @@ export class PaperComponent implements OnInit {
   async ngOnInit() {
     
     const routeParams = this.route.snapshot.paramMap;
-    let url = 'http://localhost:10000/posts/' + String(routeParams.get('title'))
+    let url = 'http://167.99.158.224:10000/posts/' + String(routeParams.get('title'))
     console.log(url)
     this.blogdata = await this.fetcher.get(url).toPromise()
     this.loadBlog()
@@ -37,7 +37,7 @@ export class PaperComponent implements OnInit {
 
   async fetchBlog() {
     // let url = 'http://localhost:10000/posts/' + String(routeParams.get('title'));
-    this.blogdata = await this.fetcher.get('http://localhost:10000/posts/').toPromise()
+    this.blogdata = await this.fetcher.get('http://167.99.158.224:10000/posts/').toPromise()
   }
 
 

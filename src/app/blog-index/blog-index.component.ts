@@ -20,11 +20,11 @@ export class BlogIndexComponent implements OnInit {
 
 
   getAll() {
-    return this.fetcher.get('http://localhost:10000/posts').toPromise()
+    return this.fetcher.get('http://167.99.158.224:10000/posts').toPromise()
   }
 
   async getSinglePost(id: string) {
-    let url: string = ('http://localhost:10000/posts/'+id)
+    let url: string = ('http://167.99.158.224:10000/posts/'+id)
     return this.fetcher.get(url).toPromise()
    }
 }
