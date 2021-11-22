@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FetcherService } from '../_services/fetcher.service'
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,11 @@ import { FetcherService } from '../_services/fetcher.service'
 })
 export class HomeComponent implements OnInit {
 
+  private baseUrl = environment.baseUrl
   constructor(private fetcher : FetcherService) { }
 
   ngOnInit(): void {
-    let data = this.fetcher.get('http://localhost:10000/posts')
-    console.log("SHNOODLE")
+    let data = this.fetcher.get(this.baseUrl)
     console.log(data)
   }
 

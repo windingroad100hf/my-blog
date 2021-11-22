@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { BlogCardComponent } from '../blog-card/blog-card.component';
 import { blogs } from '../_blog-data/blogs'
 import { FetcherService } from '../_services/fetcher.service'
+import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-blog-index',
   templateUrl: './blog-index.component.html',
@@ -10,6 +11,7 @@ import { FetcherService } from '../_services/fetcher.service'
 })
 
 export class BlogIndexComponent implements OnInit {
+  private baseUrl = environment.baseUrl
   blogs1: any;
   constructor(private fetcher: FetcherService) { }
 
@@ -20,11 +22,11 @@ export class BlogIndexComponent implements OnInit {
 
 
   getAll() {
-    return this.fetcher.get('http://localhost:10000/posts').toPromise()
+    return this.fetcher.get(this.baseUrl + '/posts').toPromise()
   }
 
   async getSinglePost(id: string) {
-    let url: string = ('http://localhost:10000/posts/'+id)
+    let url: string = (this.baseUrl + '/posts/'+id)
     return this.fetcher.get(url).toPromise()
    }
 }
